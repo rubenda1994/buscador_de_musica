@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(241, 234, 234);
+}
+
+.main{
+    max-width: 980px;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 2px 2px 3px black;
+    min-height: 50vh;
+}
+
+.header{
+    padding: 4rem;
+    background-color: black;
+    background-image: url('../img/img.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    gap: .3rem;
+}
+
+.search{
+    flex-grow: 1;
+    padding: .5rem;
+    font-size: .7rem;
+    border-radius: .3rem;
+}
+
+.submit{
+    cursor: pointer;
+}
+
+.content{
+    padding-top: 2rem;
+}
+
+.songs{
+    padding: 0;
+    list-style-type: none;
+}
+
+.song{
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.song:nth-child(even){
+    background-color: rgb(233, 227, 227);
+}
+
+.song:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.show{
+    background-color: blueviolet;
+    border-radius: .15rem;
+    border: none;
+    padding: .6rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.lyric {
+    font-size: 1.5rem;
+}
